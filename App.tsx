@@ -10,6 +10,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Inscription from './Components/Inscription';
 import VerificationScreen from './Components/VerificationScreen';
 import AboutUsScreen from './Components/AboutUsScreen';
+import AllLogin from './Components/AllLogin';
 
 export default function App() {
      const interReady = useInter({
@@ -20,17 +21,19 @@ export default function App() {
      });
   return (
     <View style={styles.container}>
-      {/* <Text>Open up App.tsx to start working on your app!</Text>
+      {/* <Text>Open up App.tsx to start working on your app!</Text> */}
       <Inscription></Inscription>
-      <VerificationScreen /> */}
+      {/* <VerificationScreen />
       <AboutUsScreen></AboutUsScreen>
+      <AllLogin></AllLogin> */}
+      
       <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container: {width:'100%',height:'100%',
     flex: 1,
     backgroundColor: "#353745",
     alignItems: "center",

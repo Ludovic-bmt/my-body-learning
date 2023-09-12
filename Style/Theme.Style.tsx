@@ -7,6 +7,7 @@ export const theme = {
     red: "#FF0000",
     softWhite: "#FBFAF5",
     softBlack: "#414A4C",
+    marron: "#ae9152",
   },
   fonts: {
     inter: {

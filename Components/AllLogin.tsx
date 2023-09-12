@@ -18,7 +18,8 @@ import {
   LogoContainer,
   LogoImage,
   LogoText,
-  RedText,
+  MarronButton,
+  MarronText,
   ScreenContainer,
 } from "../Style/AllLogin.Style";
 
@@ -37,51 +38,50 @@ import { Alert } from "react-native";
 export default function AllLogin() {
   return (
     <ScreenContainer>
-      <ImageBackground source={require("../assets/icon.png")} />
-
       <ScreenContainer>
         <CentredContainer>
           <LogoContainer>
-            <LogoImage source={require("../assets/icon.png")} />
-
-            <LogoText>Financement participatif</LogoText>
+            <LogoImage source={require("../assets/logoLearning.png")} />
+            <LogoText>Caotching, Tutoring, E-learning</LogoText>
           </LogoContainer>
 
           <ButtonContainer>
-            <FbButton>
+            <BlackButton>
               <IconWhiteButton icon={faFacebook} />
 
               <LabelButtonWhite>Connexion Facebook</LabelButtonWhite>
-            </FbButton>
+            </BlackButton>
 
-            <GoogleButton>
-              <IconGoogleButton icon={faGoogle} color="red" />
+            <BlackButton>
+              <IconGoogleButton icon={faGoogle} color="white" />
 
-              <LabelButtonBlack>Connexion Google </LabelButtonBlack>
-            </GoogleButton>
+              <LabelButtonWhite>Connexion Google </LabelButtonWhite>
+            </BlackButton>
 
             <BlackButton>
               <IconWhiteButton icon={faApple} />
 
               <LabelButtonWhite>Connexion Apple</LabelButtonWhite>
             </BlackButton>
-
-            <BlackButton>
+          </ButtonContainer>
+          <Ligne></Ligne>
+          <ButtonContainer>
+            <MarronButton>
               {/* <LinkContainer to="/loginEmail"> */}
-              
+
               <>
                 <IconWhiteButton icon={faEnvelope} />
 
                 <LabelButtonWhite>Connexion E-mail</LabelButtonWhite>
               </>
               {/* </LinkContainer> */}
-            </BlackButton>
+            </MarronButton>
 
-            <BlackButton>
+            <MarronButton>
               <IconWhiteButton icon={faPhone} />
 
               <LabelButtonWhite>Connexion Téléphone</LabelButtonWhite>
-            </BlackButton>
+            </MarronButton>
           </ButtonContainer>
 
           <CreateCompteText>Pas encore de compte ?</CreateCompteText>
@@ -92,7 +92,7 @@ export default function AllLogin() {
 
           <Ligne></Ligne>
 
-          <RedText>Recupérer mon compte</RedText>
+          <MarronText>Recupérer mon compte</MarronText>
         </CentredContainer>
       </ScreenContainer>
     </ScreenContainer>

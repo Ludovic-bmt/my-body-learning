@@ -15,9 +15,10 @@ export const CentredContainer = styled.View`
 export const LogoContainer = styled.View`
   align-items: center;
   padding-bottom: 30;
+  gap: 50;
 `;
 export const LogoImage = styled.Image`
-  width:304;
+  width: 304;
   height: 220;
 `;
 export const LogoText = styled.Text`
@@ -44,10 +45,10 @@ export const FbButton = styled.TouchableOpacity`
   flex-direction: row;
   margin: ${theme.sizes.l};
 `;
-export const GoogleButton = styled.TouchableOpacity`
+export const WhiteButton = styled.TouchableOpacity`
   background-color: ${theme.colors.white};
   padding: ${theme.sizes.m} ${theme.sizes.l};
-  width: 85%;
+  width: 100%;
   border-radius: 20;
   justify-content: flex-start;
   align-items: center;
@@ -89,6 +90,14 @@ export const LabelButtonWhite = styled.Text`
 `;
 export const LabelButtonBlack = styled.Text`
   color: ${theme.colors.black};
+  font-family: ${theme.fonts.inter.semiBold};
+  font-size: ${theme.sizes.xl};
+  text-align: center;
+  padding-right: ${theme.sizes.m};
+  flex: 1;
+`;
+export const LabelButtonMarron = styled.Text`
+  color: ${theme.colors.marron};
   font-family: ${theme.fonts.inter.semiBold};
   font-size: ${theme.sizes.xl};
   text-align: center;
@@ -138,4 +147,3 @@ export const ImageBackground = styled.Image`
   align-items: center;
   flex: 1;
 `;
-
