@@ -8,6 +8,7 @@ export const theme = {
     softWhite: "#FBFAF5",
     softBlack: "#414A4C",
     marron: "#ae9152",
+    grisNoir: "#353745",
   },
   fonts: {
     inter: {
@@ -15,6 +16,7 @@ export const theme = {
       bold: "Inter_700Bold",
       semiBold: "Inter_600SemiBold",
       medium: "Inter_500Medium",
+  
     },
   },
   sizes: {

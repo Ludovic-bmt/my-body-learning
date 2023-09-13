@@ -11,6 +11,8 @@ import Inscription from './Components/Inscription';
 import VerificationScreen from './Components/VerificationScreen';
 import AboutUsScreen from './Components/AboutUsScreen';
 import AllLogin from './Components/AllLogin';
+import Inscription2 from './Components/inscription2';
+import ConfirmationEmail from './Components/ConfirmationEmail';
 
 export default function App() {
      const interReady = useInter({
@@ -21,13 +23,13 @@ export default function App() {
      });
   return (
     <View style={styles.container}>
-      {/* <Text>Open up App.tsx to start working on your app!</Text> */}
       <Inscription></Inscription>
-      {/* <VerificationScreen />
+      <VerificationScreen />
       <AboutUsScreen></AboutUsScreen>
-      <AllLogin></AllLogin> */}
-      
-      <StatusBar style="auto" />
+      <AllLogin></AllLogin>
+      <Inscription2></Inscription2>
+      <StatusBar style="auto" /> 
+      <ConfirmationEmail></ConfirmationEmail>
     </View>
   );
 }

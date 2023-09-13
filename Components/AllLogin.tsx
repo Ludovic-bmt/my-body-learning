@@ -41,7 +41,7 @@ export default function AllLogin() {
       <ScreenContainer>
         <CentredContainer>
           <LogoContainer>
-            <LogoImage source={require("../assets/logoLearning.png")} />
+            <LogoImage source={require("../assets/pouce-en-lair.svg")} />
             <LogoText>Caotching, Tutoring, E-learning</LogoText>
           </LogoContainer>
 

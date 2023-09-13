@@ -1,43 +1,19 @@
 
-
-import {
-  faFacebook,
-  faGoogle,
-  faApple,
-} from "@fortawesome/free-brands-svg-icons";
-
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-
-// import { useStore } from "@nanostores/react";
-// import { LoginScreenStore, initLoginScreen } from "../Store/LoginScreen.Store";
-// import { Outlet, useNavigate } from "react-router-native";
-
-
 import React from 'react'
 import {
-  BlackButton,
+
   ButtonContainer,
   CentredContainer,
-  CreateCompteLink,
-  CreateCompteText,
-  FbButton,
-  GoogleButton,
-  IconGoogleButton,
-  IconWhiteButton,
-  ImageBackground,
-  LabelButtonBlack,
   LabelButtonMarron,
   LabelButtonWhite,
-  Ligne,
   // LinkContainer,
   LogoContainer,
   LogoImage,
   LogoText,
   MarronButton,
-  MarronText,
   ScreenContainer,
   WhiteButton,
-} from "../Style/inscriptionScreen.style";
+} from "../Style/InscriptionScreen.style";
 
 export default function Inscription() {
   return (
