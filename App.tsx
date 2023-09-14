@@ -13,6 +13,7 @@ import AboutUsScreen from './Components/AboutUsScreen';
 import AllLogin from './Components/AllLogin';
 import Inscription2 from './Components/inscription2';
 import ConfirmationEmail from './Components/ConfirmationEmail';
+import Message from './message/Message';
 
 export default function App() {
      const interReady = useInter({
@@ -23,13 +24,13 @@ export default function App() {
      });
   return (
     <View style={styles.container}>
-      <Inscription></Inscription>
-      <VerificationScreen />
-      <AboutUsScreen></AboutUsScreen>
-      <AllLogin></AllLogin>
-      <Inscription2></Inscription2>
-      <StatusBar style="auto" /> 
-      <ConfirmationEmail></ConfirmationEmail>
+      {/* <Inscription></Inscription> */}
+      {/* <AboutUsScreen></AboutUsScreen> */}
+      {/* <AllLogin></AllLogin> */}
+      {/* <Inscription2></Inscription2> */}
+      {/* <StatusBar style="auto" />   */}
+      {/* <ConfirmationEmail></ConfirmationEmail> */}
+      <Message></Message>
     </View>
   );
 }
