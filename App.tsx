@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
   import {
     useFonts as useInter,
@@ -7,12 +6,14 @@ import { StyleSheet, Text, View } from 'react-native';
     Inter_600SemiBold,
     Inter_500Medium,
   } from "@expo-google-fonts/inter";
-import Inscription from './Components/Inscription';
-import VerificationScreen from './Components/VerificationScreen';
-import AboutUsScreen from './Components/AboutUsScreen';
-import AllLogin from './Components/AllLogin';
-import Inscription2 from './Components/inscription2';
+
+import Authentification from './Components/Authentification';
 import ConfirmationEmail from './Components/ConfirmationEmail';
+import EmailValider from './Components/EmailValider';
+import InscriptionEmail from './Components/InscriptionEmail';
+import InscriptionEmail2 from './Components/InscriptionEmail2';
+import Inscription from './Components/Inscription';
+import Message1 from './Components/Message1';
 import Message from './message/Message';
 
 export default function App() {
@@ -24,22 +25,23 @@ export default function App() {
      });
   return (
     <View style={styles.container}>
-      {/* <Inscription></Inscription> */}
-      {/* <AboutUsScreen></AboutUsScreen> */}
-      {/* <AllLogin></AllLogin> */}
-      {/* <Inscription2></Inscription2> */}
-      {/* <StatusBar style="auto" />   */}
+      {/* <Authentification></Authentification> */}
       {/* <ConfirmationEmail></ConfirmationEmail> */}
-      <Message></Message>
+      {/* <EmailValider></EmailValider> */}
+      {/* <InscriptionEmail></InscriptionEmail> */}
+      {/* <InscriptionEmail2></InscriptionEmail2> */}
+      {/* <Inscription></Inscription> */}
+      <Message1></Message1>
+      {/* <Message></Message> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {width:'100%',height:'100%',
-    flex: 1,
-    backgroundColor: "#353745",
-    alignItems: "center",
-    justifyContent: "center",
+  container: {width: "100%",
+height: "100%",
+
+
+  
   },
 });

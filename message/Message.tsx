@@ -12,7 +12,7 @@ export default function Message() {
   return (
     <ScreenContainer>
       <CentredContainer>
-        <TitleText>MESSAGESfsfd</TitleText>
+        <TitleText>MESSAGE</TitleText>
         <IconWhiteButton icon={faMicrophone} />
         <TextInputContainer>
           <Input

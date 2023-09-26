@@ -1,27 +1,29 @@
 import React from "react";
-import {
-  CentredContainer,
-  LogoContainer,
-  LogoImage,
-  LogoText,
-  ScreenContainer,
-  TitleContainer,
-  TitleText,
-} from "../Style/ConfirmationEmail.Style";
+import { BoutonContinuer, FlexContainer, ImageArroba, ImageEnvoye, Overlap, OverlapGroup, Phone, PhoneContainer, TextConfirmation, TextEmail, TextLabel, Textpara, Textpara2 } from "../Style/ConfirmationEmail.Style";
 
-export default function ConfirmationEmail() {
+
+export default function ConfirmationEmail () {
   return (
-    <ScreenContainer>
-      <CentredContainer>
-        <TitleContainer>
-          <TitleText>Confirmation</TitleText>
-          <TitleText>e-mail Validé</TitleText>
-        </TitleContainer>
-        <LogoContainer>
-          <LogoImage source={require("../assets/pouce-en-lair.svg")} />
-          <LogoText>Financement CPF ou individuel</LogoText>
-        </LogoContainer>
-      </CentredContainer>
-    </ScreenContainer>
+    <Phone>
+      <PhoneContainer>
+        <Overlap>
+          <FlexContainer>
+            <TextConfirmation>Confirmation</TextConfirmation>
+            <TextEmail>e-mail</TextEmail>
+          </FlexContainer>
+          <ImageEnvoye source={require("../assets/envoye.png")}></ImageEnvoye>
+        </Overlap>
+        <Textpara>
+          Si vous n’avez pas reçu d’email, consultez vos spams, ou reessayez.
+        </Textpara>
+        <Textpara2>Utiliser un autre moyen de connexion.</Textpara2>
+        <BoutonContinuer>
+          <OverlapGroup>
+            <TextLabel>Utiliser un autre e-mail</TextLabel>
+            <ImageArroba source={require("../assets/arroba.png")}></ImageArroba>
+          </OverlapGroup>
+        </BoutonContinuer>
+      </PhoneContainer>
+    </Phone>
   );
-}
+};

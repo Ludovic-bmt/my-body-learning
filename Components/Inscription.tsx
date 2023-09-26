@@ -1,48 +1,23 @@
-
-import React from 'react'
-import {
-
-  ButtonContainer,
-  CentredContainer,
-  LabelButtonMarron,
-  LabelButtonWhite,
-  // LinkContainer,
-  LogoContainer,
-  LogoImage,
-  LogoText,
-  MarronButton,
-  ScreenContainer,
-  WhiteButton,
-} from "../Style/InscriptionScreen.style";
+import React from "react";
+import { BoutonContinuer, LogoImage, Overlap, OverlapGroup, OverlapWrapper, Phone, PhoneContainer, TextLabel, TextTitle, Textlabel2 } from "../Style/Inscription.Style";
 
 export default function Inscription() {
   return (
-    <ScreenContainer>
-      <ScreenContainer>
-        <CentredContainer>
-          <LogoContainer>
-            <LogoImage source={require("../assets/logoLearning.png")} />
-            <LogoText>Caotching, Tutoring, E-learning</LogoText>
-          </LogoContainer>
-
- 
-
-          <ButtonContainer>
-            <MarronButton>
-              {/* <LinkContainer to="/loginEmail"> */}
-
-              <>
-                <LabelButtonWhite>S'inscrire</LabelButtonWhite>
-              </>
-              {/* </LinkContainer> */}
-            </MarronButton>
-
-            <WhiteButton>
-              <LabelButtonMarron>Se connecter</LabelButtonMarron>
-            </WhiteButton>
-          </ButtonContainer>
-        </CentredContainer>
-      </ScreenContainer>
-    </ScreenContainer>
+    <Phone>
+      <PhoneContainer>
+        <BoutonContinuer>
+          <OverlapGroup>
+            <TextLabel>S’inscrire</TextLabel>
+          </OverlapGroup>
+        </BoutonContinuer>
+        <OverlapWrapper>
+          <Overlap>
+            <Textlabel2>Se connecter</Textlabel2>
+          </Overlap>
+        </OverlapWrapper>
+        <LogoImage source={require("../assets/logoLearning.png")}></LogoImage>
+        <TextTitle>Coaching, Tutoring, E-Learning</TextTitle>
+      </PhoneContainer>
+    </Phone>
   );
-}
+};
