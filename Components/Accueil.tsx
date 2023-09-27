@@ -1,5 +1,5 @@
 import React from "react";
-import { BoutonContinuer, LogoImage, Overlap, OverlapGroup, OverlapWrapper, Phone, PhoneContainer, TextLabel, TextTitle, Textlabel2 } from "..//Style/Accueil.Style";
+import { BoutonContinuer, LogoImage, Overlap, OverlapGroup, OverlapWrapper, Phone, PhoneContainer, TextLabel, TextTitle, Textlabel2, Inscrip } from "..//Style/Accueil.Style";
 
 export default function Accueil() {
   return (
@@ -7,7 +7,9 @@ export default function Accueil() {
       <PhoneContainer>
         <BoutonContinuer>
           <OverlapGroup>
-            <TextLabel>S’inscrire</TextLabel>
+            <Inscrip to="/email">
+              <TextLabel>S’inscrire</TextLabel>
+            </Inscrip>
           </OverlapGroup>
         </BoutonContinuer>
         <OverlapWrapper>

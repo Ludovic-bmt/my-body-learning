@@ -1,4 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { NativeRouter, Routes, Route } from 'react-router-native';
+
 import {
   useFonts as useInter,
   Inter_400Regular,
@@ -6,15 +8,15 @@ import {
   Inter_600SemiBold,
   Inter_500Medium,
 } from "@expo-google-fonts/inter";
-
-import Authentification from './Components/Seconnecter';
-import ConfirmationEmail from './Components/ConfirmationEmail';
+import Accueil from './Components/Accueil';
+import Inscription from './Components/Inscription';
+import InscriptionEmail from './Components/InscriptionEmail';
 import EmailValider from './Components/EmailValider';
-import InscriptionEmail from './Components/Inscription';
-import InscriptionEmail2 from './Components/InscriptionEmail';
-import Inscription from './Components/Accueil';
-// import Message1 from './Components/Message1';
-import Message from './message/Message';
+import ConfirmationEmail from './Components/ConfirmationEmail';
+import Seconnecter from './Components/Seconnecter';
+
+
+
 
 export default function App() {
   const interReady = useInter({
@@ -23,18 +25,32 @@ export default function App() {
     Inter_600SemiBold,
     Inter_500Medium,
   });
-  return (
-    <View style={styles.container}>
-      {/* <Authentification></Authentification> */}
-      {/* <ConfirmationEmail></ConfirmationEmail> */}
-      {/* <EmailValider></EmailValider> */}
-      {/* <InscriptionEmail></InscriptionEmail> */}
-      {/* <InscriptionEmail2></InscriptionEmail2> */}
-      {/* <Accueil></Accueil> */}
+  < NativeRouter >
 
-      {/* <Message></Message> */}
+    <View style={styles.container}>
+
+      <Routes>
+
+        <Route path="/" element={<Accueil />} />
+
+        <Route path="Inscription" element={<Inscription />} />
+
+        <Route path="InscriptionEmail" element={<InscriptionEmail />} />
+
+        <Route path="EmailValider" element={<EmailValider />} />
+
+        <Route path="ConfirmationEmail" element={<ConfirmationEmail />} />
+
+        <Route path="Seconnecter" element={<Seconnecter />} />
+
+
+
+      </Routes>
+
     </View>
-  );
+
+  </NativeRouter >
+    ;
 }
 
 const styles = StyleSheet.create({
