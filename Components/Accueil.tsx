@@ -1,7 +1,7 @@
 import React from "react";
-import { BoutonContinuer, LogoImage, Overlap, OverlapGroup, OverlapWrapper, Phone, PhoneContainer, TextLabel, TextTitle, Textlabel2 } from "../Style/Accueil.Style";
+import { BoutonContinuer, LogoImage, Overlap, OverlapGroup, OverlapWrapper, Phone, PhoneContainer, TextLabel, TextTitle, Textlabel2 } from "..//Style/Accueil.Style";
 
-export default function Inscription() {
+export default function Accueil() {
   return (
     <Phone>
       <PhoneContainer>

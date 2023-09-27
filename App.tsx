@@ -13,7 +13,7 @@ import EmailValider from './Components/EmailValider';
 import InscriptionEmail from './Components/Inscription';
 import InscriptionEmail2 from './Components/InscriptionEmail';
 import Inscription from './Components/Accueil';
-import Message1 from './Components/Message1';
+// import Message1 from './Components/Message1';
 import Message from './message/Message';
 
 export default function App() {
@@ -30,8 +30,8 @@ export default function App() {
       {/* <EmailValider></EmailValider> */}
       {/* <InscriptionEmail></InscriptionEmail> */}
       {/* <InscriptionEmail2></InscriptionEmail2> */}
-      {/* <Inscription></Inscription> */}
-      <Message1></Message1>
+      {/* <Accueil></Accueil> */}
+
       {/* <Message></Message> */}
     </View>
   );

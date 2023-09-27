@@ -1,5 +1,5 @@
 import React from "react";
-import { BoutonApple, BoutonFacebook, BoutonGoogle, ContainerEmail, ImageApple, ImageArroba, ImageFacebook, ImageGoogle, ImageLogo, ImageTel, LabelApple, LabelFacebook, LabelGoogle, Ligne1, Ligne2, Numero, Overlap, Overlap2, Overlap3, Overlap4, OverlapGroup, Phone, PhoneContainer, TextLabel, TextTitle, TextWrapper, TextWrapper2, TextWrapper3 } from "../Style/Accueil.style";
+import { BoutonApple, BoutonFacebook, BoutonGoogle, ContainerEmail, ImageApple, ImageArroba, ImageFacebook, ImageGoogle, ImageLogo, ImageTel, LabelApple, LabelFacebook, LabelGoogle, Ligne1, Ligne2, Numero, Overlap, Overlap2, Overlap3, Overlap4, OverlapGroup, Phone, PhoneContainer, TextLabel, TextTitle, TextWrapper, TextWrapper2, TextWrapper3 } from "../Style/Seconnecter.style";
 
 
 export default function Authentification() {
