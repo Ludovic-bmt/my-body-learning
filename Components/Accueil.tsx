@@ -7,14 +7,16 @@ export default function Accueil() {
       <PhoneContainer>
         <BoutonContinuer>
           <OverlapGroup>
-            <Inscrip to="/email">
+            <Inscrip to="/Inscription">
               <TextLabel>S’inscrire</TextLabel>
             </Inscrip>
           </OverlapGroup>
         </BoutonContinuer>
         <OverlapWrapper>
           <Overlap>
-            <Textlabel2>Se connecter</Textlabel2>
+            <Inscrip to="/Seconnecter">
+              <Textlabel2>Se connecter</Textlabel2>
+            </Inscrip>
           </Overlap>
         </OverlapWrapper>
         <LogoImage source={require("../assets/logoLearning.png")}></LogoImage>

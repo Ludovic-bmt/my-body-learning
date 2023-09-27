@@ -25,32 +25,33 @@ export default function App() {
     Inter_600SemiBold,
     Inter_500Medium,
   });
-  < NativeRouter >
+  return (
+    < NativeRouter >
 
-    <View style={styles.container}>
+      <View style={styles.container}>
 
-      <Routes>
+        <Routes>
 
-        <Route path="/" element={<Accueil />} />
+          <Route path="/" element={<Accueil />} />
 
-        <Route path="Inscription" element={<Inscription />} />
+          <Route path="Inscription" element={<Inscription />} />
 
-        <Route path="InscriptionEmail" element={<InscriptionEmail />} />
+          <Route path="InscriptionEmail" element={<InscriptionEmail />} />
 
-        <Route path="EmailValider" element={<EmailValider />} />
+          <Route path="EmailValider" element={<EmailValider />} />
 
-        <Route path="ConfirmationEmail" element={<ConfirmationEmail />} />
+          <Route path="ConfirmationEmail" element={<ConfirmationEmail />} />
 
-        <Route path="Seconnecter" element={<Seconnecter />} />
+          <Route path="Seconnecter" element={<Seconnecter />} />
 
 
 
-      </Routes>
+        </Routes>
 
-    </View>
+      </View>
 
-  </NativeRouter >
-    ;
+    </NativeRouter >
+  );
 }
 
 const styles = StyleSheet.create({
