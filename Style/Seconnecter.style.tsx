@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-
+import { Link } from "react-router-native";
 export const Phone = styled.View`
   background-color: #353745;
   display: flex;
@@ -142,21 +142,21 @@ export const ImageGoogle = styled.Image`
   top: 15px;
   width: 25px;
 `;
-export const BoutonFacebook= styled.View`
+export const BoutonFacebook = styled.View`
   height: 62px;
   left: 30px;
   position: absolute;
   top: 394px;
   width: 333px;
 `;
-export const Overlap3= styled.View`
+export const Overlap3 = styled.View`
   background-color: #000000;
   border-radius: 15px;
   height: 62px;
   position: relative;
   width: 331px;
 `;
-export const LabelFacebook= styled.Text`
+export const LabelFacebook = styled.Text`
   color: #ffffff;
   font-family: "Montserrat-Bold";
   font-size: 18px;
@@ -167,7 +167,7 @@ export const LabelFacebook= styled.Text`
   position: absolute;
   top: 21px;
 `;
-export const ImageFacebook= styled.Image`
+export const ImageFacebook = styled.Image`
   height: 26px;
   left: 24px;
   object-fit: cover;
@@ -175,21 +175,21 @@ export const ImageFacebook= styled.Image`
   top: 18px;
   width: 25px;
 `;
-export const BoutonApple= styled.View`
+export const BoutonApple = styled.View`
   height: 68px;
   left: 30px;
   position: absolute;
   top: 318px;
   width: 333px;
 `;
-export const Overlap4= styled.View`
+export const Overlap4 = styled.View`
   background-color: #000000;
   border-radius: 15px;
   height: 68px;
   position: relative;
   width: 331px;
 `;
-export const LabelApple= styled.Text`
+export const LabelApple = styled.Text`
   color: #ffffff;
   font-family: "Montserrat-Bold";
   font-size: 18px;
@@ -200,7 +200,7 @@ export const LabelApple= styled.Text`
   position: absolute;
   top: 26px;
 `;
-export const ImageApple= styled.Image`
+export const ImageApple = styled.Image`
   height: 68px;
   left: 4px;
   object-fit: cover;
@@ -208,21 +208,21 @@ export const ImageApple= styled.Image`
   top: 0;
   width: 65px;
 `;
-export const Ligne1= styled.Image`
+export const Ligne1 = styled.Image`
   height: 2px;
   left: 46px;
   position: absolute;
   top: 540px;
   width: 298px;
 `;
-export const Ligne2= styled.Image`
+export const Ligne2 = styled.Image`
   height: 2px;
   left: 46px;
   position: absolute;
   top: 718px;
   width: 298px;
 `;
-export const ImageLogo= styled.Image`
+export const ImageLogo = styled.Image`
   height: 152px;
   left: 90px;
   object-fit: cover;
@@ -230,7 +230,7 @@ export const ImageLogo= styled.Image`
   top: 46px;
   width: 210px;
 `;
-export const TextTitle= styled.Text`
+export const TextTitle = styled.Text`
   color: #ffffff;
   font-family: "Montserrat-Medium";
   font-size: 16px;
@@ -243,4 +243,13 @@ export const TextTitle= styled.Text`
   top: 249px;
   width: 296px;
 `;
+
+
+export const Inscrip = styled(Link)`
+
+    flex-direction: row;
+
+    flex: 1;
+
+  `;
 

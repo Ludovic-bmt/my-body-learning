@@ -1,5 +1,5 @@
 import React from "react";
-import { BoutonConfimer, ContainerRetour, ImageFleche, InputEmail, Overlap, Phone, PhoneContainer, TextConfirmer, TextInfo, TextRetour, TextTitle } from "../Style/InscriptionEmail.Style";
+import { BoutonConfimer, ContainerRetour, ImageFleche, InputEmail, Overlap, Phone, PhoneContainer, TextConfirmer, TextInfo, TextRetour, TextTitle, Inscrip } from "../Style/InscriptionEmail.Style";
 
 
 export default function InscriptionEmail() {
@@ -18,7 +18,9 @@ export default function InscriptionEmail() {
         </ContainerRetour>
         <BoutonConfimer>
           <Overlap>
-            <TextConfirmer>Confirmer</TextConfirmer>
+            <Inscrip to="/ConfirmationEmail">
+              <TextConfirmer>Confirmer</TextConfirmer>
+            </Inscrip>
           </Overlap>
         </BoutonConfimer>
       </PhoneContainer>

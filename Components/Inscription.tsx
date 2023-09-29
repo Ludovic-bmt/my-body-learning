@@ -1,6 +1,6 @@
 import React from "react";
-import { BoutonEmail, BoutonNum, ImageArroba, ImageLigne, ImageTel, LogoImage, OverlapGroup, OverlapGroupWrapper, Phone, PhoneContainer, TextLabel, TextLabel2, TextTitle, TextWrapper, TextWrapper2 } from "../Style/Inscription.Style";
-
+import { BoutonEmail, BoutonNum, ImageArroba, ImageLigne, ImageTel, LogoImage, OverlapGroup, OverlapGroupWrapper, Phone, PhoneContainer, TextLabel, TextLabel2, TextTitle, TextWrapper, TextWrapper2, Inscrip } from "../Style/Inscription.Style";
+import { Link } from "react-router-native";
 
 
 export default function Inscription() {
@@ -12,7 +12,9 @@ export default function Inscription() {
         <BoutonEmail>
           <OverlapGroupWrapper>
             <OverlapGroup>
-              <TextLabel>S’inscrire par mail</TextLabel>
+              <Inscrip to="/InscriptionEmail">
+                <TextLabel>S’inscrire par mail</TextLabel>
+              </Inscrip>
             </OverlapGroup>
           </OverlapGroupWrapper>
           <ImageArroba source={require("../assets/arroba.png")}></ImageArroba>

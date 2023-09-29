@@ -14,6 +14,8 @@ import InscriptionEmail from './Components/InscriptionEmail';
 import EmailValider from './Components/EmailValider';
 import ConfirmationEmail from './Components/ConfirmationEmail';
 import Seconnecter from './Components/Seconnecter';
+import AccueilUtilisateurConnecte from './Components/AccueilUtilisateurConnecte';
+
 
 
 
@@ -32,7 +34,7 @@ export default function App() {
 
         <Routes>
 
-          <Route path="/" element={<Accueil />} />
+          {/* <Route path="/" element={<Accueil />} /> */}
 
           <Route path="Inscription" element={<Inscription />} />
 
@@ -43,6 +45,8 @@ export default function App() {
           <Route path="ConfirmationEmail" element={<ConfirmationEmail />} />
 
           <Route path="Seconnecter" element={<Seconnecter />} />
+
+          <Route path="/" element={<AccueilUtilisateurConnecte />} />
 
 
 

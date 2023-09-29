@@ -1,5 +1,5 @@
 import React from "react";
-import { BoutonApple, BoutonFacebook, BoutonGoogle, ContainerEmail, ImageApple, ImageArroba, ImageFacebook, ImageGoogle, ImageLogo, ImageTel, LabelApple, LabelFacebook, LabelGoogle, Ligne1, Ligne2, Numero, Overlap, Overlap2, Overlap3, Overlap4, OverlapGroup, Phone, PhoneContainer, TextLabel, TextTitle, TextWrapper, TextWrapper2, TextWrapper3 } from "../Style/Seconnecter.style";
+import { BoutonApple, BoutonFacebook, BoutonGoogle, ContainerEmail, ImageApple, ImageArroba, ImageFacebook, ImageGoogle, ImageLogo, ImageTel, LabelApple, LabelFacebook, LabelGoogle, Ligne1, Ligne2, Numero, Overlap, Overlap2, Overlap3, Overlap4, OverlapGroup, Phone, PhoneContainer, TextLabel, TextTitle, TextWrapper, TextWrapper2, TextWrapper3, Inscrip } from "../Style/Seconnecter.style";
 
 
 export default function Seconnecter() {
@@ -10,27 +10,36 @@ export default function Seconnecter() {
         <TextWrapper2>Rejoignez-nous !</TextWrapper2>
         <ContainerEmail>
           <OverlapGroup>
-            <TextWrapper3>Se connecter par mail</TextWrapper3>
+            <Inscrip to="/InscriptionEmail">
+              <TextWrapper3>Se connecter par mail</TextWrapper3>
+            </Inscrip>
             <ImageArroba source={require("../assets/arroba.png")}></ImageArroba>
           </OverlapGroup>
         </ContainerEmail>
         <Overlap>
           <Numero>
             <OverlapGroup>
-              <TextLabel>Se connecter avec son n°</TextLabel>
+              <Inscrip to="/Inscription">
+                <TextLabel>Se connecter avec son n°</TextLabel>
+              </Inscrip>
             </OverlapGroup>
           </Numero>
           <ImageTel source={require("../assets/telephone.png")}></ImageTel>
         </Overlap>
         <BoutonGoogle>
           <Overlap2>
-            <LabelGoogle>Connexion avec Google</LabelGoogle>
+
+            <Inscrip to="/Inscription">
+              <LabelGoogle>Connexion avec Google</LabelGoogle>
+            </Inscrip>
             <ImageGoogle source={require("../assets/google.png")}></ImageGoogle>
           </Overlap2>
         </BoutonGoogle>
         <BoutonFacebook>
           <Overlap3>
-            <LabelFacebook>Connexion avec Facebook</LabelFacebook>
+            <Inscrip to="/Inscription">
+              <LabelFacebook>Connexion avec Facebook</LabelFacebook>
+            </Inscrip>
             <ImageFacebook
               source={require("../assets/facebook.png")}
             ></ImageFacebook>
@@ -38,7 +47,9 @@ export default function Seconnecter() {
         </BoutonFacebook>
         <BoutonApple>
           <Overlap4>
-            <LabelApple>Connexion avec Apple</LabelApple>
+            <Inscrip to="/Inscription">
+              <LabelApple>Connexion avec Apple</LabelApple>
+            </Inscrip>
             <ImageApple source={require("../assets/Apple.png")}></ImageApple>
           </Overlap4>
         </BoutonApple>
