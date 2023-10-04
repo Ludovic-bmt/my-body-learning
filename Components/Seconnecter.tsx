@@ -7,21 +7,23 @@ export default function Seconnecter() {
     <Phone>
       <PhoneContainer>
         <TextWrapper>Vous n’avez pas de compte ?</TextWrapper>
-        <TextWrapper2>Rejoignez-nous !</TextWrapper2>
+        <Inscrip to="/Inscription">
+          <TextWrapper2>Rejoignez-nous !</TextWrapper2>
+        </Inscrip>
         <ContainerEmail>
           <OverlapGroup>
-            <Inscrip to="/InscriptionEmail">
-              <TextWrapper3>Se connecter par mail</TextWrapper3>
-            </Inscrip>
+
+            <TextWrapper3>Se connecter par mail</TextWrapper3>
+
             <ImageArroba source={require("../assets/arroba.png")}></ImageArroba>
           </OverlapGroup>
         </ContainerEmail>
         <Overlap>
           <Numero>
             <OverlapGroup>
-              <Inscrip to="/Inscription">
-                <TextLabel>Se connecter avec son n°</TextLabel>
-              </Inscrip>
+
+              <TextLabel>Se connecter avec son n°</TextLabel>
+
             </OverlapGroup>
           </Numero>
           <ImageTel source={require("../assets/telephone.png")}></ImageTel>
@@ -29,17 +31,17 @@ export default function Seconnecter() {
         <BoutonGoogle>
           <Overlap2>
 
-            <Inscrip to="/Inscription">
-              <LabelGoogle>Connexion avec Google</LabelGoogle>
-            </Inscrip>
+
+            <LabelGoogle>Connexion avec Google</LabelGoogle>
+
             <ImageGoogle source={require("../assets/google.png")}></ImageGoogle>
           </Overlap2>
         </BoutonGoogle>
         <BoutonFacebook>
           <Overlap3>
-            <Inscrip to="/Inscription">
-              <LabelFacebook>Connexion avec Facebook</LabelFacebook>
-            </Inscrip>
+
+            <LabelFacebook>Connexion avec Facebook</LabelFacebook>
+
             <ImageFacebook
               source={require("../assets/facebook.png")}
             ></ImageFacebook>
@@ -47,9 +49,9 @@ export default function Seconnecter() {
         </BoutonFacebook>
         <BoutonApple>
           <Overlap4>
-            <Inscrip to="/Inscription">
-              <LabelApple>Connexion avec Apple</LabelApple>
-            </Inscrip>
+
+            <LabelApple>Connexion avec Apple</LabelApple>
+
             <ImageApple source={require("../assets/Apple.png")}></ImageApple>
           </Overlap4>
         </BoutonApple>

@@ -1,6 +1,6 @@
 import React from "react";
 import { BoutonEmail, BoutonNum, ImageArroba, ImageLigne, ImageTel, LogoImage, OverlapGroup, OverlapGroupWrapper, Phone, PhoneContainer, TextLabel, TextLabel2, TextTitle, TextWrapper, TextWrapper2, Inscrip } from "../Style/Inscription.Style";
-import { Link } from "react-router-native";
+
 
 
 export default function Inscription() {
@@ -8,7 +8,9 @@ export default function Inscription() {
     <Phone>
       <PhoneContainer>
         <TextWrapper>Vous avez déjà un compte ?</TextWrapper>
-        <TextWrapper2>Se connecter</TextWrapper2>
+        <Inscrip to="/Seconnecter">
+          <TextWrapper2>Se connecter</TextWrapper2>
+        </Inscrip>
         <BoutonEmail>
           <OverlapGroupWrapper>
             <OverlapGroup>

@@ -13,7 +13,9 @@ export default function InscriptionEmail() {
           par e-mail.
         </TextInfo>
         <ContainerRetour>
-          <ImageFleche source={require("../assets/fleche.svg")}></ImageFleche>
+          <Inscrip to="/Inscription">
+            <ImageFleche source={require("../assets/fleche.svg")}></ImageFleche>
+          </Inscrip>
           <TextRetour>Retour</TextRetour>
         </ContainerRetour>
         <BoutonConfimer>

@@ -15,7 +15,7 @@ import EmailValider from './Components/EmailValider';
 import ConfirmationEmail from './Components/ConfirmationEmail';
 import Seconnecter from './Components/Seconnecter';
 import AccueilUtilisateurConnecte from './Components/AccueilUtilisateurConnecte';
-
+import ProductDesign from './Components/ProductDesign';
 
 
 
@@ -47,6 +47,8 @@ export default function App() {
           <Route path="Seconnecter" element={<Seconnecter />} />
 
           <Route path="/" element={<AccueilUtilisateurConnecte />} />
+
+          {/* <Route path="ProductDesign" element={<ProductDesign />} /> */}
 
 
 
