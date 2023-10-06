@@ -16,6 +16,7 @@ import ConfirmationEmail from './Components/ConfirmationEmail';
 import Seconnecter from './Components/Seconnecter';
 import AccueilUtilisateurConnecte from './Components/AccueilUtilisateurConnecte';
 import ProductDesign from './Components/ProductDesign';
+import Paiement from './Components/paiement';
 
 
 
@@ -48,8 +49,9 @@ export default function App() {
 
           <Route path="/" element={<AccueilUtilisateurConnecte />} />
 
-          {/* <Route path="ProductDesign" element={<ProductDesign />} /> */}
+          <Route path="ProductDesign" element={<ProductDesign />} />
 
+          <Route path="Paiement" element={<Paiement />} />
 
 
         </Routes>

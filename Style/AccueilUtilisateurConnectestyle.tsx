@@ -2,31 +2,31 @@ import styled from "styled-components/native";
 import { ScrollView, SafeAreaView, Image } from "react-native";
 export const Phone = styled.View`
   background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex:1;
+  flex-direction: column;
+ 
   width: 100%;
   font-family: ITC Avant Garde Gothic Pro;
 `;
 
-export const PhoneContainer = styled.View`
-  background-color: #ffffff;
-  height: 1078px;
-  overflow: hidden;
-  position: relative;
-  width: 390px;
-`;
+// export const PhoneContainer = styled.View`
+//   background-color: #ffffff;
+//   height: 1078px;
+//   overflow: hidden;
+//   position: relative;
+//   width: 390px;
+// `;
 
 export const TextUtilisateur = styled.Text`
 color: #000000;
 font-family: "ITC Avant Garde Gothic Pro-Bold";
 font-size: 18px;
 font-weight: 700;
-left: 20px;
+
 letter-spacing: 0;
 line-height: normal;
-position: absolute;
-top: 54px;
+
+
 width: 175px;
 `;
 
@@ -45,32 +45,21 @@ line-height: normal;
 `;
 
 export const BarreRecherche = styled.TouchableOpacity`
-height: 30px ;
-left: 289px ;
-
-top: 71px ;
-width: 30px ;
+width:10%;
 `;
 
 export const Notification = styled.TouchableOpacity`
-height: 30px ;
-left: 335px ;
-
-top: 71px ;
-width: 30px ;
+width:10%;
 `;
 
 
 
 export const SafeContainer = styled(SafeAreaView)`
-top:-41px;
+
  
 `;
 export const StyledScrollView = styled(ScrollView)`
-flex-direction: column;
-top: 156px;
-
-height:120px;
+margin-left:20px;
 
 `;
 
@@ -122,8 +111,7 @@ export const ContainerText = styled.View`
 `;
 
 export const ItemContainer = styled.View`
-  align-items: center;
-  justify-content: center;
+  
   flex-direction: column;
  `;
 
@@ -133,15 +121,6 @@ color: #000000;
 font-family: ITC Avant Garde Gothic Pro-Bold;
 font-size: 18px;
 font-weight: 700;
-padding:20px;
-top:111px;
-textAlign: left;
-width: 246;
-height: 29;
-
-
-
-width: 246px;
 
 
 `;
@@ -154,25 +133,26 @@ borderStyle: solid;
 borderColor: #bfd9d7;
 borderWidth: 1;
 width:200px;
-height: 202;
+height: 202px;
 overflow: hidden;
-left:20px;
-top:141px;
-marginRight: 20px;  // Ajout du marginRight ici
+margin-right:20px;
+margin-left:20px;
+
+
 `;
 
 export const FrameImage = styled.Image`
 width: 195px;
 height: 103px;
-left: "50%";
+
 borderRadius: 10;
 
 `;
 
 export const TextDesign = styled.Text`
 
-top: 129px;
-  left: 9px;
+
+
   width: 200px;
   height: 35px;
   text-align: left;
@@ -180,14 +160,14 @@ top: 129px;
   font-weight: 700;
   font-size: 14px;
   font-family: 'ITC Avant Garde Gothic Pro';
-  position: absolute;
+  
 
 
 `;
 
 export const Text1 = styled.Text`
 
-left: 158px;
+
   font-family: 'Montserrat-Bold';
   color: #ae9152;
   width: 41px;
@@ -196,8 +176,8 @@ left: 158px;
   font-weight: 700;
   font-size: 14px;
   height: 16px;
-  top: 173px;
-  position: absolute; // J'ajoute cette propriété car vous utilisez "top" et "left", ce qui nécessite généralement une position absolue.
+
+  
 
 
 
@@ -205,7 +185,7 @@ left: 158px;
 
 export const Text2 = styled.Text`
 
-left: 40px;
+
   font-size: 13px;
   font-weight: 600;
   font-family: 'Montserrat-SemiBold';
@@ -213,16 +193,16 @@ left: 40px;
   letter-spacing: 1px;
   text-align: left;
   color: #bfd9d7;
-  top: 173px;
-  position: absolute; // J'ajoute cette propriété car vous utilisez "top" et "left", ce qui nécessite généralement une position absolue.
-
+  
+  
 
 
 `;
-export const IconeImage = styled.Image`
-top: 173px;
-left:20px;
-height:16;
+export const IconeImage = styled(Image)`
+
+height:16px;
+width:16px;
+align-items:center;
 
 
 `;
@@ -237,8 +217,8 @@ font-weight: 500;
 font-family: ITC Avant Garde Gothic Pro;
 color: #353745;
 text-align: center;
-width: 246;
-height: 29;
+
+height: 29 px;
 
 
 
@@ -252,14 +232,17 @@ border-radius: 20px;
 background-color: #bfd9d7;
 
 position :absolute;
-top:10px;
+top:16px;
 height: 22px;
 overflow: hidden;
 display: flex;
 align-items: center;
 justify-content: center;
-left:10;
- 
+left:36px;
+
+
+
+z-index:1;
 
 
 
@@ -273,8 +256,9 @@ borderWidth: 1;
 width:200px;
 height: 202;
 overflow: hidden;
-left:20px;
-top:141px;
+display:flex;
+flex-direction:column;
+
 
 
 
@@ -303,18 +287,26 @@ border-radius: 20px;
 background-color: #5f7ce8;
 
 position :absolute;
-top:10px;
+top:16px;
 height: 22px;
 overflow: hidden;
 display: flex;
 align-items: center;
 justify-content: center;
-left:10;
+left:266px;
+z-index:1
 `;
 
 export const TextToutVoir = styled.Text`
 
-
+fontSize: 14;
+textDecoration: underline;
+fontWeight: 700;
+fontFamily: Montserrat-Bold;
+color: #ae9152;
+textAlign: left;
+width: 76,;
+height: 16;
 `;
 
 export const SafeContainer1 = styled(SafeAreaView)`
@@ -323,10 +315,10 @@ export const SafeContainer1 = styled(SafeAreaView)`
  
 `;
 export const StyledScrollView1 = styled(ScrollView)`
-flex-direction: column;
-height:350;
+flex-direction: row;
+height:100%;
 
-
+margin-top:20px;
 `;
 
 export const TextFormationsPopulaires = styled.Text`
@@ -336,47 +328,46 @@ fontWeight: 700;
 fontFamily: ITC Avant Garde Gothic Pro;
 color: #000;
 textAlign: left;
-width: 246;
+
 height: 29;
-padding:20px;
+
 `;
 
 export const FormationsPopulairesContainer1 = styled.View`
-// top :20px;
+
 borderRadius: 15px;
 borderStyle: solid;
 borderColor: rgba(53, 55, 69, 0.5);
 borderWidth: 1px;
 height: 106;
 overflow: hidden;
-width:350;
-// left:20px;
+width:90%;
+margin-left:20px;
+
 `;
 
 export const FormationsPopulairesContainer2 = styled.View`
-top :20px;
+
 borderRadius: 15px;
 borderStyle: solid;
 borderColor: rgba(53, 55, 69, 0.5);
 borderWidth: 1px;
 height: 106;
 overflow: hidden;
-width:350;
-left:20px;
+width:90%;
+// left:20px;
 margin-top:20px;
 `;
 
 export const Image1 = styled.Image`
 width:122px;
 height:81px;
-left:7px;
-top:13px;
+l
 `;
 export const Image2 = styled.Image`
 width:122px;
 height:81px;
-left:7px;
-top:13px;
+
 `;
 
 export const PopulaireText = styled.Text`
@@ -415,9 +406,9 @@ left:10;
 `;
 
 export const Text3 = styled.Text`
-position:absolute;
+
 right:19,2;
-top:62px;
+
 fontSize: 14;
 letterSpacing: 1;
 fontWeight: 700;
@@ -426,14 +417,12 @@ color: #ae9152;
 textAlign: left;
 width: 41;
 height: 16;
-left:307;
+
 
 `;
 
 export const Text4 = styled.Text`
-position:absolute;
-left:167;
-top:62;
+
 fontSize: 13;
 letterSpacing: 1;
 fontWeight: 600;
@@ -446,9 +435,7 @@ height: 16;
 `;
 
 export const IconeImage1 = styled.Image`
-position:absolute;
-left:239;
-top:18;
+
 color:#353745;
 
 `;
@@ -461,9 +448,8 @@ color: #000;
 textAlign: left;
 width: 200;
 height: 14;
-top:18;
-position:absolute;
-left:154;
+
+
 `;
 
 export const Textmotion = styled.Text`
@@ -475,14 +461,12 @@ color: #000;
 textAlign: left;
 width: 200;
 height: 14;
-top:18;
-position:absolute;
-left:154;
+
 
 `;
 
 export const Text5 = styled.Text`
-position:absolute;
+
 fontSize: 14;
 fontWeight: 700;
 fontFamily: ITC Avant Garde Gothic Pro;
@@ -490,50 +474,53 @@ color: #353745;
 textAlign: left;
 width: 200;
 height: 14;
-left:181px
-top:41;
 
 
-
-`;
-
-export const IconeImage2 = styled.Image`
-position:relative;
-left:151;
-top:38;
 
 
 `;
 
-export const BellImage = styled.Image`
+export const IconeImage2 = styled(Image)`
 
-left:335;
-top:71;
-color:blue;
+
+height: 16x;
+width: 16px;
 
 
 `;
-export const SearchImage = styled.Image`
 
-left:289;
-top:71;
-color:red;
+export const BellImage = styled(Image)`
+
+height: 35px;
+width: 35px;
+
+
+
+
+`;
+export const SearchImage = styled(Image)`
+
+
+height: 35px;
+width: 35px;
+
 
 
 `;
 
 export const NouveautéText = styled.Text`
 
-position: absolute;
+position:absolute;
  
 
 font-size: 11px;
 font-weight: 500;
 font-family: 'ITC Avant Garde Gothic Pro';
 color: #ffffff;
+justify-content:center;
 text-align: center;
 height: 12px;
-align-items:center
+
 
 
 
@@ -547,23 +534,76 @@ background-color: #353745;
 position:absolute;
 top:16px;
 left:10;
-
+display:flex;
+align-items:center;
+justify-content:center
 height: 22px;
 
 
 
 `;
 
-export const ContainerView = styled.View`
-background-color:#303134;
-width:85%;
-height:100px;
+export const ViewContainer = styled.View`
+display:flex;
+flex-direction:row;
+width:90%;
+justify-content:space-between;
+margin-left:20px;
+margin-top:20px;
+`;
+
+export const ViewBienvenue = styled.View`
+display:flex;
+flex-direction:column;
+width:80%;
+justify-content:space-between;
+margin:55px 0px 0px 13px;
 
 `;
 
-export const CategorieView = styled.View`
-background-color:red;
-width:85%;
-height:100px;
+export const ContainerIcone = styled.View`
+display:flex;
+flex-direction:row;
+width:95%;
+justify-content:flex-end;
+
+
+`;
+
+export const GlobalFormation = styled.View`
+display:flex;
+flex-direction:column;
+width:100%;
+justify-content:center;
+align-items:center;
+
+`;
+
+export const InfoContainer = styled.View`
+display:flex;
+flex-direction:column;
+`;
+export const PrixEtoileContainer = styled.View`
+display:flex;
+flex-direction:row;
+justify-content:space-between
+width:100%;
+
+`;
+
+export const ViewEtoile = styled.View`
+
+display:flex;
+flex-direction:row;
+width:60%;
+gap:10px;
+`;
+
+export const DesignContainer= styled.View`
+
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+width:60%;
 
 `;
