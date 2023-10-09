@@ -91,8 +91,6 @@ export const TextTitle = styled.Text`
 
 export const Inscrip = styled(Link)`
 
-    flex-direction: row;
-
-    flex: 1;
+   
 
   `;

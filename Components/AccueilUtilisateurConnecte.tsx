@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Image, Text, TouchableOpacity, } from "react-native";
-import { Phone, ViewContainer,GlobalFormation,ViewBienvenue, TextUtilisateur, TextCategories, Notification, BarreRecherche, SafeContainer, StyledScrollView, ImageWrapper, StyledImage, StyledText, ContainerText, ItemContainer, TextRecommandation, ContainerFrame1, FrameImage, TextDesign, Text1, Text2, IconeImage, RecommandeContainer, RecommandeText, ContainerFrame2, GratuitText, GratuitContainer, TextToutVoir, StyledScrollView1, SafeContainer1, TextFormationsPopulaires, FormationsPopulairesContainer1, FormationsPopulairesContainer2, Image1, Image2, PopulaireContainer, PopulaireText, Text3, Text4, IconeImage1, Textux, Textmotion, Text5, IconeImage2, BellImage, SearchImage, NouveautéContainer, NouveautéText, ContainerIcone, InfoContainer, PrixEtoileContainer, ViewEtoile, DesignContainer,} from "../Style/AccueilUtilisateurConnectestyle";
+import { Phone, ViewContainer,GlobalFormation,ViewBienvenue, TextUtilisateur, TextCategories, Notification, BarreRecherche, SafeContainer, StyledScrollView, ImageWrapper, StyledImage, StyledText, ContainerText, ItemContainer, TextRecommandation, ContainerFrame1, FrameImage, TextDesign, Text1, Text2, IconeImage, RecommandeContainer, RecommandeText, ContainerFrame2, GratuitText, GratuitContainer, TextToutVoir, StyledScrollView1, SafeContainer1, TextFormationsPopulaires, FormationsPopulairesContainer1, FormationsPopulairesContainer2, Image1, Image2, PopulaireContainer, PopulaireText, Text3, Text4, IconeImage1, Textux, Textmotion, Text5, IconeImage2, BellImage, SearchImage, NouveautéContainer, NouveautéText, ContainerIcone, InfoContainer, PrixEtoileContainer, ViewEtoile, DesignContainer, InfoContainer2, PrixEtoileContainer2, ViewEtoile2,  ContainerImage, TextuxContainer, } from "../Style/AccueilUtilisateurConnectestyle";
 import { Inscrip } from "../Style/ProductDesign.style";
+import { Link } from "react-router-native";
 
 
 export default function AccueilUtilisateurConnecte() {
@@ -9,7 +10,7 @@ export default function AccueilUtilisateurConnecte() {
 
     return (
         <Phone>
-            {/* <PhoneContainer> */}
+        
                 
                     {/* Titre avec le nom de l'utilisateur */}
                    <ViewBienvenue> 
@@ -19,7 +20,9 @@ export default function AccueilUtilisateurConnecte() {
                     {/* Barre de recherche */}
                     <ContainerIcone>
                         < BarreRecherche>
+                            <Link to="/Recherche">
                             <SearchImage source={require('../assets/search.png')} />
+                            </Link>
                         </BarreRecherche>
                            
                         {/* Bouton de notifications */}
@@ -137,85 +140,154 @@ export default function AccueilUtilisateurConnecte() {
                     <TextFormationsPopulaires>Formations Populaire</TextFormationsPopulaires>
                     <TextToutVoir>Tout Voir </TextToutVoir>
                    </ViewContainer> 
-                   <GlobalFormation>
-                   <PopulaireContainer>
+                   {/* <GlobalFormation> */}
+                   
+                    <FormationsPopulairesContainer1>
+
+                 <ContainerImage>
+                    <Image1 source={require('../assets/uxdesign.png')} />
+                    <PopulaireContainer>
                             <PopulaireText>Populaire</PopulaireText>
                         </PopulaireContainer>
-                    <FormationsPopulairesContainer1>
-                    <Image1 source={require('../assets/uxdesign.png')} />
+                    </ContainerImage> 
                     <DesignContainer>
-                        <Textux>UI/UX Design</Textux>
-                        <IconeImage1 source={require('../assets/Rectangle2.png')} />
-                        </DesignContainer>
+                             <Textux>UI/UX Design</Textux>
+                             <IconeImage1 source={require('../assets/Rectangle2.png')} />
+                    </DesignContainer>
 
-                        <PrixEtoileContainer>
-                      <ViewEtoile> 
-                      <IconeImage2 source={require('../assets/Star1.png')} />
-                        <Text4>4.1 (89)</Text4>
-                        
-                        </ViewEtoile>
-                        <Text3>85 €</Text3>
-                        </PrixEtoileContainer>
-                     <InfoContainer> 
+
+                      <InfoContainer2> 
                      <IconeImage2 source={require('../assets/Ellipse1.png')} />
                           <Text5>Alain</Text5>
                  
-                        </InfoContainer>
+                        </InfoContainer2>
 
+
+
+                    <PrixEtoileContainer2>
+                      <ViewEtoile2> 
+                         <IconeImage2 source={require('../assets/Star1.png')} />
+                        <Text4>4.1 (89)</Text4>
+                        
+                        </ViewEtoile2>
+                        <Text3>85 €</Text3> 
+                    </PrixEtoileContainer2>
+                      
                         
                     </FormationsPopulairesContainer1>
 
-                    <FormationsPopulairesContainer2>
+                    <FormationsPopulairesContainer1>
 
-                        <Image2 source={require('../assets/motiondesign.png')} />
-                        <PopulaireContainer>
+                 <ContainerImage>
+                    <Image1 source={require('../assets/motiondesign.png')} />
+                    
+                          
+                    <PopulaireContainer>
                             <PopulaireText>Populaire</PopulaireText>
                         </PopulaireContainer>
-                        <Text3>85 €</Text3>
+                    </ContainerImage> 
+                    <DesignContainer>
+                             <Textux>Motion Design</Textux>
+                             <IconeImage1 source={require('../assets/Rectangle2.png')} />
+                    </DesignContainer>
+
+
+                      <InfoContainer2> 
+                     <IconeImage2 source={require('../assets/Ellipse1.png')} />
+                          <Text5>Bain</Text5>
+                 
+                        </InfoContainer2>
+
+
+
+                    <PrixEtoileContainer2>
+                      <ViewEtoile2> 
+                         <IconeImage2 source={require('../assets/Star1.png')} />
                         <Text4>4.1 (89)</Text4>
-                        <Text5>Bain </Text5>
-                        <Textmotion>Motion Design</Textmotion>
-                        <IconeImage2 source={require('../assets/Star1.png')} />
-                        <IconeImage1 source={require('../assets/Rectangle2.png')} />
-                    </FormationsPopulairesContainer2>
-                    </GlobalFormation>
+                        
+                        </ViewEtoile2>
+                        <Text3>85 €</Text3> 
+                    </PrixEtoileContainer2>
+                      
+                        
+                    </FormationsPopulairesContainer1>
+                   
                   <ViewContainer> 
                     <TextFormationsPopulaires>Formations Récentes</TextFormationsPopulaires>
                     <TextToutVoir>Tout Voir </TextToutVoir>
                   </ViewContainer> 
-                  <GlobalFormation>
-                    <FormationsPopulairesContainer1>
+                  
+                  <FormationsPopulairesContainer1>
 
-                        <Image1 source={require('../assets/illustrator.png')} />
-                        <NouveautéContainer>
+<ContainerImage>
+   <Image1 source={require('../assets/illustrator.png')} />
+   <NouveautéContainer>
                             <NouveautéText>Nouveauté</NouveautéText>
                         </NouveautéContainer>
-                        <Text3>85 €</Text3>
-                        <Text4>4.1 (89)</Text4>
-                        <Textux>Illustrator -
-                            CV graphique</Textux>
-                        <Text5>Aline</Text5>
-                        <IconeImage2 source={require('../assets/Ellipse1.png')} />
+   </ContainerImage> 
+   <DesignContainer>
+        <TextuxContainer>    <Textux>Illustrator -
+</Textux>
+<Textux>
+CV graphique</Textux>
+</TextuxContainer>
+            <IconeImage1 source={require('../assets/Rectangle2.png')} />
+   </DesignContainer>
 
-                        <IconeImage1 source={require('../assets/Rectangle2.png')} />
-                    </FormationsPopulairesContainer1>
 
-                    <FormationsPopulairesContainer2>
+     <InfoContainer2> 
+    <IconeImage2 source={require('../assets/Ellipse1.png')} />
+         <Text5>Aline</Text5>
 
-                        <Image2 source={require('../assets/javascript.png')} />
-                        <NouveautéContainer>
+       </InfoContainer2>
+
+
+
+   <PrixEtoileContainer2>
+     <ViewEtoile2> 
+        <IconeImage2 source={require('../assets/Star1.png')} />
+       <Text4>4.1 (89)</Text4>
+       
+       </ViewEtoile2>
+       <Text3>85 €</Text3> 
+   </PrixEtoileContainer2>
+     
+       
+   </FormationsPopulairesContainer1>
+
+   <FormationsPopulairesContainer1>
+
+<ContainerImage>
+
+
+   <Image1 source={require('../assets/javascript.png')} />
+   <NouveautéContainer>
                             <NouveautéText>Nouveauté</NouveautéText>
                         </NouveautéContainer>
-                        <Text3>85 €</Text3>
-                        <Text4>4.1 (89)</Text4>
-                        <Text5>Bessom</Text5>
-                        <Textmotion>Javascript-Les,bases</Textmotion>
-                        <IconeImage2 source={require('../assets/Star1.png')} />
-                        <IconeImage1 source={require('../assets/Rectangle2.png')} />
-                    </FormationsPopulairesContainer2>
-                    </GlobalFormation>
-                
-            {/* </PhoneContainer> */}
+   </ContainerImage> 
+   <DesignContainer>
+            <Textux>Javascript - Les bases</Textux>
+            <IconeImage1 source={require('../assets/Rectangle2.png')} />
+   </DesignContainer>
+
+
+     <InfoContainer2> 
+    <IconeImage2 source={require('../assets/Ellipse1.png')} />
+         <Text5>Besson</Text5>
+
+       </InfoContainer2>
+
+
+
+   <PrixEtoileContainer2>
+     <ViewEtoile2> 
+        <IconeImage2 source={require('../assets/Star1.png')} />
+       <Text4>4.1 (89)</Text4>
+       
+       </ViewEtoile2>
+       <Text3>85 €</Text3> 
+   </PrixEtoileContainer2>
+   </FormationsPopulairesContainer1>
         </Phone>
     );
 };

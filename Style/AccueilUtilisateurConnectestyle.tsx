@@ -343,6 +343,8 @@ height: 106;
 overflow: hidden;
 width:90%;
 margin-left:20px;
+margin-bottom:17px;
+
 
 `;
 
@@ -380,8 +382,7 @@ textAlign: center;
 display: flex;
 alignItems: center;
 justifyContent: center;
-width: 43;
-height: 16;
+
 
 
 
@@ -394,15 +395,15 @@ backgroundColor: "rgba(174, 145, 82, 0.97)";
 flex: 1;
 width: 60px;
 height: 22;
-overflow: "hidden";
 position:absolute;
+
 top:16px;
 textAlign: center;
 display: flex;
-alignItems: center;
-justifyContent: center;
 
-left:10;
+justifyContent: center;
+align-items:center;
+
 `;
 
 export const Text3 = styled.Text`
@@ -414,9 +415,7 @@ letterSpacing: 1;
 fontWeight: 700;
 fontFamily: Montserrat-Bold;
 color: #ae9152;
-textAlign: left;
-width: 41;
-height: 16;
+
 
 
 `;
@@ -428,14 +427,13 @@ letterSpacing: 1;
 fontWeight: 600;
 fontFamily: Montserrat-SemiBold;
 color: #353745;
-textAlign: left;
-width: 82;
-height: 16;
+
 
 `;
 
 export const IconeImage1 = styled.Image`
-
+width:13px;
+height:20px;
 color:#353745;
 
 `;
@@ -445,9 +443,8 @@ fontSize: 14;
 fontWeight: 700;
 fontFamily: ITC Avant Garde Gothic Pro;
 color: #000;
-textAlign: left;
-width: 200;
-height: 14;
+
+
 
 
 `;
@@ -471,9 +468,7 @@ fontSize: 14;
 fontWeight: 700;
 fontFamily: ITC Avant Garde Gothic Pro;
 color: #353745;
-textAlign: left;
-width: 200;
-height: 14;
+
 
 
 
@@ -483,7 +478,7 @@ height: 14;
 export const IconeImage2 = styled(Image)`
 
 
-height: 16x;
+height: 16px;
 width: 16px;
 
 
@@ -533,7 +528,7 @@ border-radius: 20px;
 background-color: #353745;
 position:absolute;
 top:16px;
-left:10;
+
 display:flex;
 align-items:center;
 justify-content:center
@@ -582,6 +577,8 @@ align-items:center;
 export const InfoContainer = styled.View`
 display:flex;
 flex-direction:column;
+margin-left:10px;
+margin-top:20px;
 `;
 export const PrixEtoileContainer = styled.View`
 display:flex;
@@ -603,7 +600,50 @@ export const DesignContainer= styled.View`
 
 display:flex;
 flex-direction:row;
+
+
+margin-left:152px;
+width:50%;
 justify-content:space-between;
+`;
+
+export const InfoContainer2 = styled.View`
+
+display:flex;
+flex-direction:row;
+width:80%;
+gap:10px;
+margin-left:152px;
+margin-top:9px;
+`;
+
+export const PrixEtoileContainer2 = styled.View`
+
+display:flex;
+flex-direction:row;
+width:50%;
+margin-left:152px;
+justify-content:space-between;
+margin-top:7px;
+`;
+
+export const ViewEtoile2 = styled.View`
+
+display:flex;
+flex-direction:row;
 width:60%;
 
 `;
+
+export const ContainerImage = styled.View`
+width:0px;
+height:0px;
+margin-top:13px;
+margin-left:3px;
+`;
+
+export const TextuxContainer = styled.View`
+flex-direction:column;
+
+`;
+

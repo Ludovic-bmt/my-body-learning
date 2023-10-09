@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 import { Link } from "react-router-native";
-import { ScrollView, SafeAreaView, Image } from "react-native";
+
 interface TextProps {
   secondary?: boolean;
 }

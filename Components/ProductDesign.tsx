@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Image, Text, TouchableOpacity, } from "react-native";
+
 import { Phone, RecommandeContainer, RecommandeText } from "../Style/AccueilUtilisateurConnectestyle";
 
 import { AccueilContainer, FlecheImage, BookmarkImage, Titre, Inscrip, DesignImage, ImageContainer,  ElementAccueil, ElementAccueil2, GlobalContainer, ViewEtoile1, TextNombre, IconeImageDesign, TextPrix, GlobalContainer2, ImageDesign, TextTitre, ContainerTitre, Trait, GlobalContainer3, Ellipse, ContainerText, Text1,  ContainerIcone, Etoile, Fleche, ContainerEtoile, Text3, Text2, EnsembleContainer, IconeEmplacement, TextAdresse, TextCarte, ContainerEmplacementGlobal, ContainerEmplacement, TextDetail, ContainerDetail, Trait2, Text85, BoutonContainer, TextBouton, Containerfinal } from "../Style/ProductDesign.style";
+import { Link } from "react-router-native";
 
 export default function ProductDesign() {
 
@@ -85,7 +86,9 @@ export default function ProductDesign() {
                               <TextCarte>Voir la carte</TextCarte>
 
                               <TextAdresse secondary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit tempus justo. Mauris ut mi id libero ullamcorper pharetra faucibus nec leo.</TextAdresse>
+                              <Link to="/Details">
                               <TextCarte>Details du cours </TextCarte>
+                              </Link>
                               </ContainerEmplacementGlobal>
 
                               <ContainerDetail>

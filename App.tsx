@@ -16,7 +16,9 @@ import ConfirmationEmail from './Components/ConfirmationEmail';
 import Seconnecter from './Components/Seconnecter';
 import AccueilUtilisateurConnecte from './Components/AccueilUtilisateurConnecte';
 import ProductDesign from './Components/ProductDesign';
-import Paiement from './Components/paiement';
+import Paiement from './Components/Paiement';
+import Details from './Components/Details';
+import Recherche from './Components/Recherche';
 
 
 
@@ -53,7 +55,9 @@ export default function App() {
 
           <Route path="Paiement" element={<Paiement />} />
 
+          <Route path="Details" element={<Details />} />
 
+          <Route path="Recherche" element={<Recherche />} />
         </Routes>
 
       </View>
