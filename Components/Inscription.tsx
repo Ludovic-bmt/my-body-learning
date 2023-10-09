@@ -1,5 +1,5 @@
 import React from "react";
-import { BoutonContinuer, LogoImage, Overlap, OverlapGroup, OverlapWrapper, Phone, PhoneContainer, TextLabel, TextTitle, Textlabel2 } from "../Style/Inscription.Style";
+import { BoutonContinuer, Inscrip, LogoImage, Overlap, OverlapGroup, OverlapWrapper, Phone, PhoneContainer, TextLabel, TextTitle, Textlabel2 } from "../Style/Inscription.Style";
 
 export default function Inscription() {
   return (
@@ -7,7 +7,9 @@ export default function Inscription() {
       <PhoneContainer>
         <BoutonContinuer>
           <OverlapGroup>
-            <TextLabel>S’inscrire</TextLabel>
+            <Inscrip to="/email">
+              <TextLabel>S’inscrire</TextLabel>
+            </Inscrip>
           </OverlapGroup>
         </BoutonContinuer>
         <OverlapWrapper>

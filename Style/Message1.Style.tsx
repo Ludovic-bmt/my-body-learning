@@ -470,33 +470,31 @@ export const InputSearch = styled.TextInput`
 
   width: 303px;
 
-//   .iphone .search-instance {
-//   height: 24px !important;
-//   left: 5px !important;
-//   position: absolute !important;
-//   top: 4px !important;
-//   width: 24px !important;
-// }
+  //   .iphone .search-instance {
+  //   height: 24px !important;
+  //   left: 5px !important;
+  //   position: absolute !important;
+  //   top: 4px !important;
+  //   width: 24px !important;
+  // }
 
-// .iphone .microphone-instance {
-//   height: 24px !important;
-//   left: 273px !important;
-//   position: absolute !important;
-//   top: 4px !important;
-//   width: 24px !important;
-// }
-
+  // .iphone .microphone-instance {
+  //   height: 24px !important;
+  //   left: 273px !important;
+  //   position: absolute !important;
+  //   top: 4px !important;
+  //   width: 24px !important;
+  // }
 
   color: #353745;
   font-family: "Montserrat-Medium";
   font-size: 13px;
   font-weight: 500;
- 
+
   letter-spacing: 0;
   line-height: normal;
- 
-  white-space: nowrap;
 
+  white-space: nowrap;
 `;
 export const LabelMessage = styled.Text`
     color: #353745;

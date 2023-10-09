@@ -1,105 +1,132 @@
 import styled from "styled-components/native";
-import { theme } from "../Style/Theme.Style";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { Image } from "react-native";
 
 export const ScreenContainer = styled.View`
   flex: 1;
-  background-color: ${theme.colors.white};
-  justify-content: flex-start;
+  background-color: white;
   width: 100%;
   height: 100%
 `;
 
 export const CentredContainer = styled.View`
   flex: 1;
+  height: 100%
+  width: 100%;
 `;
 export const NavbarContainer = styled.View`
   flex: 1;
   flex-direction: row;
   width: 100%,
-  align-items: end; 
+  align-items: end;
+  position:sticky;
+  height: 52px;
+  justify-content:space-between;
 `;
 export const LogoContainer = styled.TouchableOpacity`
   flex: 1;
-  align-item: center;
-  border: 1px;
-  height: 20%
+  align-items: center;
+  // border: solid 1px black;
+  height: 52px;
+  flex-direction:column;
 `;
-export const IconNav = styled(FontAwesomeIcon)`
-  font-size: ${theme.iconSizes.xl};
-  margin: auto
+export const IconNav = styled(Image)`
+
+  height: 28px !important;
+  width: 28px !important;
+  object-fit: cover;
+  
 `;
 
 export const TextNav = styled.Text`
-  font-size: ${theme.sizes.l};
-  margin:auto
+  color: #182f3d;
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  line-height: normal;
+  text-align: center;
+  
 `;
 export const TitleText = styled.Text`
-  color: ${theme.colors.grisNoir};
+  color: #353745;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
   text-align: center;
-  margin-bottom: 10px;
-  margin-top: 50px;
-  font-family: ${theme.fonts.inter.semiBold};
-  font-size: ${theme.sizes.xl};
-  line-height: 39px;
+  margin:34px 15px;
 `;
 export const TextInputContainer = styled.View`
-  flex: 1;
+  display: flex;
+  border-radius: 15px;
+  height: 33px;
+  width: 80%;
+  background-color: red;
   flex-direction: row;
-  align-items: center;
-  background-color: ${theme.colors.white};
-  border-radius: 5px;
-  margin: 0px ${theme.sizes.xxl};
+  justify-content: space-between;
   margin: auto;
 `;
 
 export const Input = styled.TextInput`
-  flex: 1;
-  padding: ${theme.sizes.m};
-  color: ${theme.colors.grisNoir};
-  font-size: ${theme.sizes.l};
-  margin-bottom: 20px;
-  align-items: center;
-  width:300px
-  height: 51px
-  top: 326px
-  left: 33px
-  border-radius: 50px
-  border: 1px ${theme.colors.grisNoir};  
+margin:auto;
+align-item:center;
 `;
 export const AjoutMessage = styled.TouchableOpacity`
-  background-color: ${theme.colors.white};
-  padding: ${theme.sizes.m} ${theme.sizes.l};
-  width: 100%;
-  justify-content: flex-start;
+  width: 80%;
+  height: 33px;
+  display: flex;
   align-items: center;
   flex-direction: row;
-  margin: ${theme.sizes.l};
-  
 `;
 export const LabelMessage = styled.Text`
-  color: ${theme.colors.grisNoir};
-  font-family: ${theme.fonts.inter.semiBold};
-  font-size: ${theme.sizes.xl};
-  padding-right: ${theme.sizes.m};
-  flex: 1;
-  margin-right:25
+  color: #353745;
+  font-family: "Montserrat-Medium";
+  font-size: 13px;
+  font-weight: 500;
+
 `;
 export const IconPlus = styled(FontAwesomeIcon)`
-  color: ${theme.colors.grisNoir};
-  font-size: ${theme.iconSizes.xl};
-  padding: ${theme.sizes.s} ${theme.sizes.xxl};
-  align-self: flex-start;
+ width: 10%;
 `;
 export const MessageContainer = styled.View`
+ display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: ${theme.sizes.xxl};
 `;
 export const IconWhiteButton = styled(FontAwesomeIcon)`
-  color: ${theme.colors.white};
-  font-size: ${theme.iconSizes.xl};
-  padding: ${theme.sizes.s} ${theme.sizes.m};
-  align-self: flex-start;
+margin:8px;
 `;
+export const BarreSeparaison = styled(Image)`
+  height: 22px;
+  width: 1px;
+  postion: relative;
+  top:-15px
+`;
+export const MessageContainer1 = styled.TouchableOpacity`
+  width: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+`;
+export const ImageContainer = styled.View`
+border-radius: 50px;
+border: solid 1px black;
+width: 60px;
+height: 60px;
+`;
+
+export const Conversation = styled.View`
+width: 80%;
+flex-direction: column;
+margin-left: 20px;
+`;
+
+export const Destinataire = styled.Text`
+width:100%`
+;
+export const Information = styled.Text`
+width:100%`
+;
+

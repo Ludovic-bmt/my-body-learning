@@ -1,3 +1,4 @@
+import { Link } from "react-router-native";
 import styled from "styled-components/native";
 
 export const Phone = styled.View`
@@ -87,4 +88,8 @@ export const TextTitle = styled.Text`
   text-align: center;
   top: 400px;
   width: 296px;
+  `;
+  export const Inscrip = styled(Link)`
+    flex-direction: row;
+    flex: 1;
   `;

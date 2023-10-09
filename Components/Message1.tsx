@@ -42,7 +42,10 @@ export default function Message1 () {
     <Phone>
       <PhoneContainer>
         <TextTitle>Messages</TextTitle>
-        <InputSearch placeholder="Message"></InputSearch>
+        <TextInputContainer>
+          
+          <InputSearch placeholder="Message"></InputSearch>
+        </TextInputContainer>
         <Group>
           <TextWrapper3></TextWrapper3>
           <ImageKolia source={require("../assets/Profile.svg")}></ImageKolia>
